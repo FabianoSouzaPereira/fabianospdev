@@ -1,16 +1,31 @@
 import { NgModule } from '@angular/core';
-import { CoreModule } from './core/core.module';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { CellsModule } from './pages/cells/cells.module';
+import { PersonalsModule } from './pages/personals/personals.module';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    CoreModule,
-    AppRoutingModule
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    RouterModule,
+    AppRoutingModule,
+    CellsModule,
+    PersonalsModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
