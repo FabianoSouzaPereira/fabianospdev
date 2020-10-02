@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '../../shared/shared.module';
 
 import { CellsRoutingModule } from './cells-routing.module';
 import { CellListComponent } from './cell-list/cell-list.component';
 
 
 @NgModule({
-  declarations: [CellListComponent],
+  declarations: [ CellListComponent ],
   imports: [
-    CommonModule,
+    SharedModule,
     CellsRoutingModule
   ]
 })
