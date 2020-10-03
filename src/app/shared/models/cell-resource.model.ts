@@ -1,0 +1,29 @@
+export class CellResourceModel {
+  insert?: string;
+  update?: string;
+  delete?: string;
+  id?: string;
+  uid?: string;
+  rede?: string;
+  celula?: string;
+  lider?: string;
+  vicelider?: string;
+  secretario?: string;
+  anfitriao?: string;
+  colaborador?: string;
+  data?: string;
+  dia?: string;
+  hora?: string;
+  Endereco?: string;
+  bairro?: string;
+  estado?: string;
+  cidade?: string;
+  pais?: string;
+  cep?: string;
+  celuserid?: string;
+  igreja?: string;
+  status?: string;
+  dados?: string;
+  dadosWhole?: string;
+  lastId?: string;
+}

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 
 import { HttpClientModule } from "@angular/common/http";
@@ -7,24 +7,30 @@ import { RouterModule } from "@angular/router";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { CellsModule } from './pages/cells/cells.module';
 import { PersonalsModule } from './pages/personals/personals.module';
 import { HomeModule } from './pages/home/home.module';
+import { UsersModule } from './pages/users/users.module';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotfoundComponent
   ],
   imports: [
     CoreModule,
-    CommonModule,
+    SharedModule,
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
     CellsModule,
     PersonalsModule,
-    HomeModule
+    HomeModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
