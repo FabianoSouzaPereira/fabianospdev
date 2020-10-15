@@ -7,7 +7,7 @@ import { CellFormComponent } from './cell-form/cell-form.component';
 
 
 @NgModule({
-  declarations: [ CellListComponent, CellFormComponent, CellFormComponent ],
+  declarations: [ CellListComponent, CellFormComponent ],
   imports: [
     SharedModule,
     CellsRoutingModule

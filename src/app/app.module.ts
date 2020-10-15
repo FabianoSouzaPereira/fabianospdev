@@ -12,6 +12,8 @@ import { PersonalsModule } from './pages/personals/personals.module';
 import { HomeModule } from './pages/home/home.module';
 import { UsersModule } from './pages/users/users.module';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { AuthGuardService } from './core/guards/auth-guard.service';
+import { LoginModule } from './pages/login/login.module';
 
 
 @NgModule({
@@ -28,9 +30,10 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     CellsModule,
     PersonalsModule,
     HomeModule,
-    UsersModule
+    UsersModule,
+    LoginModule
   ],
-  providers: [],
+  providers: [ AuthGuardService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
