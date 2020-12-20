@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '../../shared/shared.module';
 
 import { CellsRoutingModule } from './cells-routing.module';
 import { CellListComponent } from './cell-list/cell-list.component';
+import { CellFormComponent } from './cell-form/cell-form.component';
 
 
 @NgModule({
-<<<<<<< Updated upstream
-  declarations: [CellListComponent],
-=======
   declarations: [ CellListComponent, CellFormComponent ],
->>>>>>> Stashed changes
   imports: [
-    CommonModule,
+    SharedModule,
     CellsRoutingModule
   ]
 })

@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { SharedModule } from '../../shared/shared.module';
 
 import { PersonalsRoutingModule } from './personals-routing.module';
 import { PersonalListComponent } from './personal-list/personal-list.component';
+import { PersonalFormComponent } from './personal-form/personal-form.component';
 
 
 @NgModule({
-  declarations: [PersonalListComponent],
+  declarations: [ PersonalListComponent, PersonalFormComponent ],
   imports: [
-    CommonModule,
+    SharedModule,
     PersonalsRoutingModule
   ]
 })
