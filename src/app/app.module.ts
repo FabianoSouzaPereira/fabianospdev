@@ -12,7 +12,6 @@ import { PersonalsModule } from './pages/personals/personals.module';
 import { HomeModule } from './pages/home/home.module';
 import { UsersModule } from './pages/users/users.module';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
-import { AuthGuardService } from './core/guards/auth-guard.service';
 import { LoginModule } from './pages/login/login.module';
 
 
@@ -33,7 +32,7 @@ import { LoginModule } from './pages/login/login.module';
     UsersModule,
     LoginModule
   ],
-  providers: [ AuthGuardService ],
+  providers: [],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
