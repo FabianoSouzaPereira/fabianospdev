@@ -11,6 +11,14 @@ import { AppComponent } from './app.component';
 import { CellsModule } from './pages/cells/cells.module';
 import { PersonalsModule } from './pages/personals/personals.module';
 import { HomeModule } from './pages/home/home.module';
+<<<<<<< Updated upstream
+=======
+import { UsersModule } from './pages/users/users.module';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { AuthGuardService } from './core/guards/auth-guard.service';
+import { LoginModule } from './pages/login/login.module';
+
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -25,9 +33,15 @@ import { HomeModule } from './pages/home/home.module';
     AppRoutingModule,
     CellsModule,
     PersonalsModule,
+<<<<<<< Updated upstream
     HomeModule
+=======
+    HomeModule,
+    UsersModule,
+    LoginModule
+>>>>>>> Stashed changes
   ],
-  providers: [],
+  providers: [ AuthGuardService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

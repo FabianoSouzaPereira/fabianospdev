@@ -6,7 +6,11 @@ import { CellListComponent } from './cell-list/cell-list.component';
 
 
 @NgModule({
+<<<<<<< Updated upstream
   declarations: [CellListComponent],
+=======
+  declarations: [ CellListComponent, CellFormComponent ],
+>>>>>>> Stashed changes
   imports: [
     CommonModule,
     CellsRoutingModule
