@@ -15,10 +15,38 @@
   width: 100% !important;
 }
 
+.carrosel {
+  min-height: 700px;
+  max-height: 700px;
+  z-index: -1300;
+}
+.carousel-item {
+  height: 700px;
+}
+
+.img-myspot {
+  margin-top: -15%;
+}
+
+.text-above-img {
+  margin-top: -35%;
+  font-size: 6rem;
+  font-weight: 900;
+}
+.text2-above-img {
+  margin-top: 0%;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.card {
+  border: none;
+}
+
 div#cd-01,
 div#cd-02,
 div#cd-03 {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,16 +92,12 @@ div#desenv-square {
   width: 100% !important;
   margin: 20% 0% 15% 0%;
   padding: 0% 0% 1% 0%;
-  background-color: #fff !important;
-  border-radius: 12px;
-  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.9);
 }
-div#desenv-square:hover {
-  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.9), inset 0 0 0.5em rgb(187, 187, 202);
-}
+
 div#desenv-square h1 {
   font-size: 1.4rem;
 }
+
 div#desenv-square h2,
 h3 {
   font-size: 1rem;
@@ -114,7 +138,6 @@ header#texto-esq span {
 
 header#texto-esq p {
   width: 250px;
-  padding-bottom: -15px;
   font-size: 0.8rem;
 }
 
@@ -128,6 +151,7 @@ table#tableindex td {
   text-align: center;
   vertical-align: middle;
   background-color: #d6cbcb;
+  color: rgb(128, 125, 125);
 }
 
 header#nv {
@@ -137,6 +161,26 @@ header#nv {
 }
 
 @media (min-width: 280px) and (max-width: 323px) {
+  .carrosel {
+    margin-top: 50px;
+    min-height: 200px;
+    max-height: 200px;
+    z-index: -1300;
+  }
+  .img-myspot {
+    margin-top: 0%;
+  }
+
+  .text-above-img {
+    margin-top: -50%;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .text2-above-img {
+    margin-top: 0%;
+    font-size: 1rem;
+    font-weight: 900;
+  }
   .header-text {
     align-items: center;
     justify-content: center;
@@ -156,7 +200,7 @@ header#nv {
 
   .card-body {
     min-width: 100%;
-    padding: 15%;
+    padding: 15% 15% 0% 15%;
   }
 
   div#cd-01,
@@ -169,14 +213,12 @@ header#nv {
     margin: 0.1% 0.5% 0.5% 0.5%;
     width: 35%;
     height: 160px;
-    border-radius: 10px;
-    box-shadow: 5px 8px 7px rgba(0, 0, 0, 0.9);
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
   }
-  div#cd-01 i,
-  div#cd-02 i,
-  div#cd-03 i {
-    margin: 0px 0px 10px 0px;
-    background-color: azure;
+
+  .i1 {
+    margin: 25px 0px 0px 0px !important;
   }
 
   div#cd-01 p,
@@ -239,8 +281,6 @@ header#nv {
     margin-right: auto;
     padding: 4%;
     margin: 0%;
-    border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.9);
   }
 
   div#desenv-square h1 {
@@ -312,18 +352,31 @@ header#nv {
   }
 }
 @media (min-width: 324px) and (max-width: 575px) {
+  .carrosel {
+    margin-top: 50px;
+    min-height: 250px;
+    max-height: 250px;
+    z-index: -1300;
+  }
+  .img-myspot {
+    margin-top: 0%;
+  }
+
+  .text-above-img {
+    margin-top: -50%;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .text2-above-img {
+    margin-top: 0%;
+    font-size: 1rem;
+    font-weight: 900;
+  }
   .header-text {
     align-items: center;
     justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .container,
-  .container-fluid {
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-    margin-left: 0% !important;
-    margin-right: 0% !important;
   }
   .header-p {
     font-size: 0.5rem;
@@ -341,7 +394,7 @@ header#nv {
     align-items: center;
     justify-content: center;
     line-height: normal;
-    margin: 0.1% 0.5% 0.5% 0.5%;
+    margin: 45% 0.5% 0.5% 0.5% !important;
     width: 35%;
     height: 160px;
     border-radius: 10px;
@@ -414,8 +467,6 @@ header#nv {
     margin-right: auto;
     padding: 4%;
     margin: 0%;
-    border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.9);
   }
 
   div#desenv-square h1 {
@@ -423,6 +474,9 @@ header#nv {
   }
   div#desenv-square h2 {
     font-size: 0.8rem !important;
+  }
+  caption#p {
+    font-size: 0.5rem;
   }
 
   section#sectable {
@@ -451,7 +505,6 @@ header#nv {
 
   header#texto-esq p {
     width: 250px;
-    padding-bottom: -15px;
     font-size: 0.8rem;
   }
 
@@ -597,8 +650,6 @@ header#nv {
     margin-right: auto;
     padding: 4%;
     margin: 0%;
-    border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.9);
   }
 
   div#desenv-square h1 {
@@ -672,6 +723,36 @@ header#nv {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .carrosel {
+    margin-top: 50px;
+    min-height: 500px;
+    max-height: 500px;
+    z-index: -1300;
+  }
+  .carousel-item {
+    height: 700px;
+  }
+
+  .img-myspot {
+    margin-top: 0%;
+  }
+
+  .text-above-img {
+    margin-top: -35%;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .text2-above-img {
+    margin-top: 0%;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .header-text {
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .header-text {
     align-items: center;
     justify-content: center;
@@ -702,7 +783,7 @@ header#nv {
     align-items: center;
     justify-content: center;
     line-height: normal;
-    margin: 0.1% 1% 0.5% 2%;
+    margin: 30% 1% 0.5% 2% !important;
     width: 40%;
     height: 180px;
     border-radius: 10px;
@@ -777,15 +858,13 @@ header#nv {
     margin-right: auto;
     padding: 4%;
     margin: 0%;
-    border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.9);
   }
 
   div#desenv-square h1 {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   div#desenv-square h2 {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
 
   section#sectable {
@@ -957,8 +1036,6 @@ header#nv {
     margin-right: auto;
     padding: 4%;
     margin: 0%;
-    border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.9);
   }
 
   div#desenv-square h1 {
@@ -984,7 +1061,7 @@ header#nv {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    height: auto !important;
+    height: auto;
     font-size: 1rem;
   }
 
@@ -1032,11 +1109,37 @@ header#nv {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .carrosel {
+    min-height: 700px;
+    max-height: 700px;
+    z-index: -1300;
+  }
+  .carousel-item {
+    height: 700px !important;
+  }
+
+  .img-myspot {
+    margin-top: -15%;
+  }
+
+  .text-above-img {
+    margin-top: -35%;
+    font-size: 6rem;
+    font-weight: 900;
+  }
+  .text2-above-img {
+    margin-top: 0%;
+    font-size: 3rem;
+    font-weight: 900;
+  }
+
   div#cd-01,
   div#cd-02,
   div#cd-03 {
     margin: 2%;
-    width: 12rem;
+    width: 18rem;
+    height: 20rem;
+    margin-top: 30% !important;
   }
 
   div#cd-01 h1,
@@ -1045,30 +1148,49 @@ header#nv {
     font-size: 1.4rem;
   }
 
+  div#cd-01 h2,
+  div#cd-02 h2,
+  div#cd-03 h2 {
+    font-size: 1.5rem !important;
+  }
+
   div#cd-01 h3,
   div#cd-02 h3,
   div#cd-03 h3 {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   div#cd-01 h4,
   div#cd-02 h4,
   div#cd-03 h4 {
     font-size: 0.8rem;
   }
+  div#cd-01 p,
+  div#cd-02 p,
+  div#cd-03 p {
+    font-size: 1.2rem !important;
+  }
+
+  div#cd-01 i,
+  div#cd-02 i,
+  div#cd-03 i {
+    font-size: 1.8rem;
+    margin-top: 20%;
+  }
 
   div#desenv-square {
-    width: 70% !important;
+    width: 100% !important;
     height: 550px !important;
-    margin: 5% 15% 5% 15% !important;
-    padding: 2% 2% 5% 2% !important;
+    padding: 2% 0% 5% 0% !important;
   }
 
   div#desenv-square h1 {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
   }
-  div#desenv-square h2,
-  h3 {
-    font-size: 1rem;
+  div#desenv-square h2 {
+    font-size: 2.5rem !important;
+  }
+  div#desenv-square h3 {
+    font-size: 2rem;
   }
 
   section#sectable {
@@ -1090,15 +1212,6 @@ header#nv {
     height: 250px;
     font-size: 1.4rem !important;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  }
-
-  table#tableindex td:hover {
-    -webkit-transform: scale(0.95);
-    -moz-transition: scale(0.95);
-    -o-transition: scale(0.95);
-    transition: scale(1.05);
-    -ms-transform: scale(0.95);
-    transform: scale(0.95);
   }
 
   header#texto-esq span {
@@ -1224,8 +1337,6 @@ header#nv {
     margin-right: auto;
     padding: 4%;
     margin: 0%;
-    border-radius: 5px;
-    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.9);
   }
 
   div#desenv-square h1 {
